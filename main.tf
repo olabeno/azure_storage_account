@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "TFAzureLab-RG" {
 }
 
 resource "azurerm_storage_account" "storage" {
-  name                     = "mystorageacct2025-05-12-xyz"
+  name                     = "olabeno12052025"
   resource_group_name      = azurerm_resource_group.TFAzureLab-RG.name
   location                 = azurerm_resource_group.TFAzureLab-RG.location
   account_tier             = "Standard"
@@ -21,4 +21,5 @@ resource "azurerm_storage_container" "container" {
   storage_account_name  = azurerm_storage_account.storage.name
   container_access_type = "private"
 }
+###
 
